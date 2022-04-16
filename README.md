@@ -1334,3 +1334,24 @@
     }
 }
 ```
+
+### notes about graphql
+
+you can make multiable quires also you can use data from first query in second query for example used the logged user id to get the saved freelancer search terms and then use his saved word to get the current tasks for the saved word so we can use @export
+
+```
+# Export the user's name
+query GetUserName {
+  user(id:1) {
+    name @export(as: "_search")
+  }
+}
+
+# Search for posts with the user's name from the previous query
+query SearchPosts($_search: String = "") {
+  posts(searchfor: $_search) {
+    title
+  }
+}
+```
+https://dev.to/leoloso/executing-multiple-queries-in-a-single-operation-in-graphql-goe
