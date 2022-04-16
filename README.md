@@ -1,5 +1,6 @@
 # display-schema-into-HTML
 
+### graphql schema
 ```HTML
 {
     "data": {
