@@ -15,11 +15,11 @@
                 {
                     "kind": "OBJECT",
                     "name": "Query",
-                    "description": "",
+                    "description": "all queries for Dog table  and also if other tables",
                     "fields": [
                         {
                             "name": "getAllDogs",
-                            "description": "",
+                            "description": "return all dogs data",
                             "args": [],
                             "type": {
                                 "kind": "NON_NULL",
@@ -164,7 +164,7 @@
                 {
                     "kind": "OBJECT",
                     "name": "Mutation",
-                    "description": "",
+                    "description": "all mutations for the Dog table and also if other tables",
                     "fields": [
                         {
                             "name": "newDog",
@@ -250,7 +250,7 @@
                         },
                         {
                             "name": "deleteDogByModal",
-                            "description": "",
+                            "description": "delete all dogs using their modal",
                             "args": [
                                 {
                                     "name": "modal",
@@ -388,7 +388,7 @@
                 {
                     "kind": "OBJECT",
                     "name": "Dog",
-                    "description": "",
+                    "description": "a schema for the Object we have or database table",
                     "fields": [
                         {
                             "name": "id",
