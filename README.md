@@ -1337,8 +1337,7 @@
 
 ### notes about graphql
 
-you can make multiable quires also you can use data from first query in second query for example used the logged user id to get the saved freelancer search terms and then use his saved word to get the current tasks for the saved word so we can use @export
-
+You can do multiple questions/requests, you can also use the data from the first query in the second query, for example, use the registered user ID to get the search terms saved for the freelancer, then use the saved terms to get the current tasks for the top saved term in one step without click for better UX so we can use the export
 ```
 # Export the user's name
 query GetUserName {
